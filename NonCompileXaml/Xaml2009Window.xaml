@@ -1,0 +1,30 @@
+﻿<local:Xaml2009Window x:Class="NonCompileXaml.Xaml2009Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NonCompileXaml"
+        mc:Ignorable="d"
+        Title="Xaml2009" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Target="{x:Reference txtFirstName}">_FirstName</Label>
+            <TextBox x:Name="txtFirstName"/>
+            <Label Margin="0,10,0,0" Target="{x:Reference txtLastName}">_LastName</Label>
+            <TextBox x:Name="txtLastName"/>
+        
+        <ListBox Margin="0,25,0,0" SelectionChanged="lst_SelectionChanged">
+            <x:String>Item One</x:String>
+            <x:String>Item Two</x:String>
+            <x:String>Item Three</x:String>
+        `
+            <local:Person>
+                <x:Arguments>
+                    <x:String>Joe</x:String>
+                    <x:String>McDowell</x:String>
+                </x:Arguments>
+            </local:Person>    
+        </ListBox>
+        </StackPanel>
+    </Grid>
+</local:Xaml2009Window>
