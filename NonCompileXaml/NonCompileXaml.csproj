@@ -51,10 +51,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Window1.xaml">
+    <None Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="Window1.cs" />
     <Compile Include="Xaml2009Window.xaml.cs">
       <DependentUpon>Xaml2009Window.xaml</DependentUpon>
